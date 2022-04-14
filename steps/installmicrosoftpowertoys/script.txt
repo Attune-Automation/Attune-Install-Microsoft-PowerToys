@@ -1,0 +1,37 @@
+# Script Variables
+$downloadLink = "https://github.com/microsoft/PowerToys/releases/download/v0.57.2/PowerToysSetup-0.57.2-x64.exe"
+$fileLocation = "c:\software\"
+$installer = "PowerToysSetup-0.57.2-x64.exe"
+$software = "Send To Toys"
+$arguments = "/install /quiet /norestart"
+
+# Check if the software is already installed.
+$installed = (`
+Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
+where { $_.DisplayName -like "$software*" }) -ne $null
+
+if($installed) 
+{
+	Write-Host "'$software' is already installed."
+}
+else 
+{
+# install software.
+	Write-Host "Running the '$software' installer..."
+    Start-Process -FilePath "$fileLocation$installer" `
+    -ArgumentList "$arguments" -Wait
+    
+# Confirm the software was installed.
+    $installed = (`
+    Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | `
+    where { $_.DisplayName -like "$software*" }) -ne $null
+    
+    if($installed) 
+    {
+    	Write-Host "'$software' was successfully installed."
+    }
+    else 
+    {
+    	Write-Error "'$software' was not installed."
+    }
+}

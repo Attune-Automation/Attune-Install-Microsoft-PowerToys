@@ -1,0 +1,10 @@
+{
+    "fileName": "PowerToysSetup-0.57.2-x64.exe", 
+    "formatKey": "unknown", 
+    "key": "powertoys", 
+    "md5": "95e57fdca68bbd345a22c480a1690f04", 
+    "name": "PowerToys", 
+    "remoteUri": "https://github.com/microsoft/PowerToys/releases/download/v0.57.2/PowerToysSetup-0.57.2-x64.exe", 
+    "size": 62965952, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

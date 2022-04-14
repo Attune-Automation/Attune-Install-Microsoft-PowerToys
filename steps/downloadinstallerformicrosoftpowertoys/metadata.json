@@ -1,0 +1,14 @@
+{
+    "enabled": true, 
+    "interpreter": 2, 
+    "interpreterCommand": null, 
+    "interpreterScriptExt": null, 
+    "interpreterScriptSyntax": "powershell", 
+    "key": "downloadinstallerformicrosoftpowertoys", 
+    "name": "Download Installer for Microsoft PowerToys", 
+    "osCredKey": "windowsuseradministrator", 
+    "serverKey": "powertoysnode", 
+    "successExitCode": 0, 
+    "timeout": null, 
+    "type": "com.servertribe.attune.tuples.StepWinRmTuple"
+}

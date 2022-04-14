@@ -1,0 +1,11 @@
+{
+    "archiveKey": "powertoys", 
+    "deployPath": "/c$/software/", 
+    "enabled": true, 
+    "key": "pushinstallerformicrosoftpowertoys", 
+    "name": "Push Installer for Microsoft PowerToys", 
+    "osCredKey": "windowsuseradministrator", 
+    "serverKey": "powertoysnode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": false
+}
