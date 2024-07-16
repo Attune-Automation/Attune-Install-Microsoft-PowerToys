@@ -1,7 +1,9 @@
 {
+    "actionOnStepFail": null, 
     "archiveKey": "powertoys", 
     "deployPath": "/c$/software/", 
     "enabled": true, 
+    "externalUuid4": "5937cec9-5c46-4a6f-aab3-2d379baab582", 
     "key": "pushinstallerformicrosoftpowertoys", 
     "name": "Push Installer for Microsoft PowerToys", 
     "osCredKey": "windowsuseradministrator", 

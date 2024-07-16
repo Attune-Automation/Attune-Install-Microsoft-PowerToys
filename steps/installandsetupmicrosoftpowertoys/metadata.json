@@ -1,6 +1,8 @@
 {
+    "actionOnStepFail": null, 
     "concurrency": 1, 
     "enabled": true, 
+    "externalUuid4": "4d5b7ae1-fc0b-4ff0-9d06-1c50ded7a24e", 
     "isBlueprint": true, 
     "key": "installandsetupmicrosoftpowertoys", 
     "links": [
